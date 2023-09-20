@@ -9,7 +9,7 @@ const CustomImage = ({ image, fill }) => {
       {image ? (
         <Image
           src={image}
-          className={` cursor-pointer hover:scale-110 ease-in duration-200 ${
+          className={` cursor-pointer ease-in duration-200 ${
             isLoading ? "grayscale blur-xl" : ""
           }`}
           alt="Image"
