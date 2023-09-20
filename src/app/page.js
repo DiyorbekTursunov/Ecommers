@@ -52,8 +52,7 @@ export default function Home() {
       </div>
       <div className='w-full bg-cover mx-auto h-[402px] bg-[url(../components/images/Foodimg3.png)] bg-no-repeat flex justify-center items-center mb-[88px]'>
         <div className='max-w-[717px] text-center'>
-          <h2 className='text-[36px] font-bold text-[#F46A06]'>When a mans stomach is full it makes no
-            difference whether he is rich or poor.</h2>
+          <h2 className='text-[36px] font-bold text-[#F46A06]'>When a mans stomach is full it makes no difference whether he is rich or poor.</h2>
           <p className='text-[#fff] mb-[20px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
             finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
           <button className='w-full justify-center text-[#fff] flex gap-[8px] items-center'><Image src={play} alt='Play icon'/> Watch Our Story</button>
