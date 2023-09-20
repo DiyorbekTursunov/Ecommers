@@ -2,12 +2,13 @@ import siteLogo from './images/siteLogo.png'
 
 import Link from 'next/link'
 import Image from 'next/image'
+import CustomImage from './Customimage'
 
 const Navbar = () => {
   return (
     <div className='max-w-[1230px] mx-auto flex items-center justify-between px-3 py-[24px]'>
         <Link className='hover:opacity-70 active:opacity-60' href={'/'}>
-            <Image src={siteLogo} alt='site logo'/>
+            <CustomImage image={siteLogo} />
         </Link>
         <div className='flex items-center gap-[54px]'>
             <nav>

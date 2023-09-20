@@ -11,6 +11,7 @@ import Twitter from '../components/images/Twitter.png'
 import Instagram from '../components/images/Instagram.png'
 
 import Link from 'next/link';
+import CustomImage from '@/components/Customimage';
 export default function Home() {
   return (
     <div>
@@ -22,11 +23,11 @@ export default function Home() {
               <p className='text-[#555]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum amet leo. </p>
             </div>
             <div className='flex gap-[23px]'>
-              <button className='py-[10px] px-[24px] bg-[#F46A06] text-white flex items-center gap-[6px] hover:opacity-70 active:opacity-60'>Order Now <Image src={order} alt='Order icon' /></button>
-              <button className='py-[10px] px-[24px] bg-[#fff] text-[#000] shadow-xl font-bold flex items-center gap-[6px] hover:opacity-70 active:opacity-60'>Learn More <Image src={Arrow} alt='Arrow icon' /></button>
+              <button className='py-[10px] px-[24px] bg-[#F46A06] text-white flex items-center gap-[6px] hover:opacity-70 active:opacity-60'>Order Now <CustomImage image={order} /></button>
+              <button className='py-[10px] px-[24px] bg-[#fff] text-[#000] shadow-xl font-bold flex items-center gap-[6px] hover:opacity-70 active:opacity-60'>Learn More <CustomImage image={Arrow}/></button>
             </div>
           </div>
-          <Image src={Hero} alt='Hero img' />
+          <CustomImage image={Hero}/>
         </div>
       </header>
       <ol className='w-full bg-[#F46A06] flex gap-[180px] justify-center py-[47px] text-[40px] font-bold text-white text-center mb-[137px]'>
@@ -55,7 +56,7 @@ export default function Home() {
           <h2 className='text-[36px] font-bold text-[#F46A06]'>When a mans stomach is full it makes no difference whether he is rich or poor.</h2>
           <p className='text-[#fff] mb-[20px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio
             finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
-          <button className='w-full justify-center text-[#fff] flex gap-[8px] items-center'><Image src={play} alt='Play icon'/> Watch Our Story</button>
+          <button className='w-full justify-center text-[#fff] flex gap-[8px] items-center'><CustomImage image={play}/> Watch Our Story</button>
         </div>
       </div>
       <div className='max-w-[1230px] mx-auto px-3 pb-[108px]'>
@@ -99,9 +100,9 @@ export default function Home() {
             </ol>
           </nav>
           <div className='flex gap-[22px] justify-center mb-[27px]'>
-            <button className='hover:opacity-70 active:opacity-60'><Image src={FaceBook} alt='FaceBook icon'/></button>
-            <button className='hover:opacity-70 active:opacity-60'><Image src={Twitter} alt='Twitter icon'/></button>
-            <button className='hover:opacity-70 active:opacity-60'><Image src={Instagram} alt='Instagram icon'/></button>
+            <button className='hover:opacity-70 active:opacity-60'><CustomImage image={FaceBook} /></button>
+            <button className='hover:opacity-70 active:opacity-60'><CustomImage image={Twitter} /></button>
+            <button className='hover:opacity-70 active:opacity-60'><CustomImage image={Instagram} /></button>
           </div>
           <p>© 2021. FoodDX. All rights reserved.</p>
         </div>
